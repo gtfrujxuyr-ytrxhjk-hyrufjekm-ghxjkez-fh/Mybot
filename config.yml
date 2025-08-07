@@ -189,10 +189,10 @@ matchmaking:
       variant: chess960
 
 messages:
-  greeting: "Humpo Dumpo! I am {me} made by @Supratsa owned by @VEERSAMRATSINGH .Looking forward to start,good luck."
-  goodbye: "Good game!How about a rematch?"
-  greeting_spectators: "Hey, I'm running on {engine} .Type !help for a list of commands."
-  goodbye_spectators: "Thanks For watching!"
+  greeting: "Hello. Good luck!"
+  goodbye: "Good game!"
+  greeting_spectators: "Hello."
+  goodbye_spectators: "Bye!"
 
 whitelist:
   - VEERSAMRATSINGH
