@@ -48,9 +48,6 @@ class Chatter:
 
             print(output)
 
-        if chat_message.text.startswith('!'):
-            await self._handle_command(chat_message)
-
     async def print_eval(self) -> None:
         if not self.game_info.increment_ms and self.lichess_game.own_time < 30.0:
             return
