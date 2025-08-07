@@ -27,7 +27,7 @@ class Opponents:
             data = self.opponent_dict[bot.username][matchmaking_type.perf_type]
             if data.color == Challenge_Color.BLACK or data.release_time <= datetime.now():
                 self.last_opponent = (bot.username, data.color, matchmaking_type)
-                return bot, data.color
+                return bot, "white"
 
         self.busy_bots.clear()
 
