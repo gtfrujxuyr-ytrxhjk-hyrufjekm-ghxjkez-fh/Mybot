@@ -15,7 +15,6 @@ from enums import Challenge_Color, Perf_Type, Variant
 from event_handler import Event_Handler
 from game_manager import Game_Manager
 from logo import LOGO
-
 try:
     import readline
 except ImportError:
@@ -46,7 +45,13 @@ class User_Interface:
         self.config = Config.from_yaml(config_path)
 
         async with API(self.config) as self.api:
-            print(f'{LOGO} {self.config.version}\n')
+            print(r'''
+______       _   _     _
+| ___ \     | | | |   (_)
+| |_/ / ___ | |_| |    _
+| ___ \/ _ \| __| |   | |
+| |_/ / (_) | |_| |___| |
+\____/ \___/ \__\_____/_|''', self.config.version)
 
             account = await self.api.get_account()
             username: str = account['username']
