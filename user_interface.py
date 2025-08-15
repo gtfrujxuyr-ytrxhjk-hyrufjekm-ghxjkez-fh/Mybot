@@ -14,7 +14,7 @@ from engine import Engine
 from enums import Challenge_Color, Perf_Type, Variant
 from event_handler import Event_Handler
 from game_manager import Game_Manager
-from logo import LOGO
+LOGO = "LOL"
 try:
     import readline
 except ImportError:
